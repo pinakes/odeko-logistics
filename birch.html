@@ -1,9 +1,30 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Delivery Dashboard - Birch Coffee</title>
-</head>
-<body>
+	<head>
+		<title>Delivery Dashboard - Birch Coffee</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
-</body>
+		<link rel="stylesheet" type="text/css" href="style/style.css" />
+		
+	</head>
+	<body>
+
+		<h1>Birch</h1>
+		<h3>Today's delivery dashboard</h3>
+		<hr>
+		<div id="locations"></div>
+
+		<svg id="map" width="760" height="720"></svg>
+		<div id='neighborhoodPopover'> </div>
+
+		<script src="https://d3js.org/d3.v4.min.js"></script>
+		<script src="https://d3js.org/topojson.v1.min.js"></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/tabletop.js/1.4.3/tabletop.min.js"></script>
+		<script type="text/javascript" src="js/scripts.js"></script>
+		<!--<script src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTKGncPuaGjhM9q_Z7ds01cIE2QVZxjXl6JNOi1SRDKr_KUAKg-Q4xwXH4PS1XLcFUFwBTP5YZbW6Bt/pub?gid=1556157282&single=true&output=csv"></script>-->
+
+	</body>
 </html>
