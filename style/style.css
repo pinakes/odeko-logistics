@@ -1,20 +1,21 @@
 html {
-  font-family: "Helvetica Neue", helvetica, arial, sans-serif;
+
 }
 
-#locations {
-  width: 250px;
-  height: 256px;
+#locations text {
   padding: 10px;
-  background: #ffffff;
-  position: absolute;
-  right: 0;
-  border: 1px solid #cccccc;
+  border-radius: 4px;
+  background: #f4f4f4;
 }
 
-.done {
-  color: #a3eca3;
-  text-decoration: line-through;
+#locations text.done {
+  color: #3b903b;
+  background: #c3f1c3;
+}
+
+.location{
+  margin-bottom: 18px;
+  width: 100%;
 }
     
 path {

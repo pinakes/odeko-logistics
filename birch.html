@@ -3,27 +3,42 @@
 	<head>
 		<title>Delivery Dashboard - Birch Coffee</title>
 		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<meta name="apple-mobile-web-app-capable" content="yes">
 		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 		<link rel="stylesheet" type="text/css" href="style/style.css" />
 		
 	</head>
 	<body>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-sm">
+					<h1>Birch</h1>
+					<h4>Today's delivery dashboard</h4>
+				</div>
+			</div>
+			<hr>
+			<div class="row">
+				<div class="col-sm">
+					<div id="locations"></div>
 
-		<h1>Birch</h1>
-		<h3>Today's delivery dashboard</h3>
-		<hr>
-		<div id="locations"></div>
+					<svg id="map" width="760" height="720"></svg>
+					<div id='neighborhoodPopover'> </div>
+				</div>
+			</div>
 
-		<svg id="map" width="760" height="720"></svg>
-		<div id='neighborhoodPopover'> </div>
+		</div>
 
 		<script src="https://d3js.org/d3.v4.min.js"></script>
-		<script src="https://d3js.org/topojson.v1.min.js"></script>
+		<script src="https://d3js.org/topojson.v0.min.js"></script>
 		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/tabletop.js/1.4.3/tabletop.min.js"></script>
 		<script type="text/javascript" src="js/scripts.js"></script>
+		<script type="text/javascript" src="js/nyc.js"></script>
+		<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 		<!--<script src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTKGncPuaGjhM9q_Z7ds01cIE2QVZxjXl6JNOi1SRDKr_KUAKg-Q4xwXH4PS1XLcFUFwBTP5YZbW6Bt/pub?gid=1556157282&single=true&output=csv"></script>-->
 
 	</body>
