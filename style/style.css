@@ -28,6 +28,9 @@ p {
 hr {
   margin-top: 0;
 }
+.container {
+  max-width: 800px;
+}
 #locations {
   margin: 25px 0;
 }

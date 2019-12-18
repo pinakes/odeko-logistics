@@ -8,8 +8,13 @@ function renderSpreadsheetData() {
 
 function draw(data, tabletop) {
 
-    console.log(data);
+    //console.log(data);
 
+    //const today = new Date()
+    //const tomorrow = new Date(today)
+    //tomorrow.setDate(tomorrow.getDate() + 1)
+
+    //document.getElementById("date").innerHTML = "Today's Delivery (" + today.getMonth() + "/" + today.getDate() + ")";
 
     var locations = d3.select("#locations")
 
