@@ -1,21 +1,60 @@
 html {
 
 }
-
+h1 {
+  float: left;
+  display: block;
+  width: 100px;
+  height: 30px;
+  text-indent: -9000px;
+  overflow: hidden;
+  background: url(/assets/logo-odeko.png) no-repeat 0 0;
+  background-size: contain;
+  margin-top: 12px;
+  margin-right: 8px;
+}
+h2 {
+  font-weight: 300;
+}
+h4 {
+  font-size: 16px;
+  font-weight: 300;
+  color: #A7A4FF;
+  margin-top: 18px;
+}
+p {
+  font-size: 18px;
+}
+hr {
+  margin-top: 0;
+}
+#locations {
+  margin: 25px 0;
+}
 #locations text {
   padding: 10px;
   border-radius: 4px;
   background: #f4f4f4;
+  display: inline-block;
+  width: 100%;
 }
-
 #locations text.done {
-  color: #3b903b;
-  background: #c3f1c3;
+  color: #92c792;
+  background: #e3f9e3;
+}
+#locations text.doneWithIssues {
+  color: #a57552;
+  background: #f5f3c8;
+}
+#locations text.justIssues {
+  color: #c33b3b;
+  background: #fdddd0;
 }
 
 .location{
-  margin-bottom: 18px;
+  margin-bottom: 6px;
   width: 100%;
+  position: relative;
 }
     
 path {
@@ -35,4 +74,39 @@ path {
   border-radius: 8px;     
   pointer-events: none;
   opacity: 0;     
+}
+
+a.showPic {
+  position: absolute;
+  z-index: 1;
+  right: 14px;
+  top: 14px;
+  display: block;
+  width: 20px;
+  height: 20px;
+  overflow: hidden;
+  text-indent: -9000px;
+  background: url(/assets/camera.svg) no-repeat;
+  background-size: contain;
+  opacity: 0.8;
+}
+a.hidePic {
+  display: none;
+}
+p.showNote {
+    margin-left: 10px;
+    color: #8d8e98;
+    margin: 0.5em 0.6em 1.5em 0.6em;
+}
+p.hideNote {
+      display: none;
+}
+.logo {
+  float: left;
+  display: block;
+  width: 80px;
+  height: 80px;
+  background: url(/assets/logo-birch.png) no-repeat 0 0;
+  background-size: contain;
+  margin-right: 14px;
 }
